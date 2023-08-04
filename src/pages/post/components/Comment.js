@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Comment = () => {
+const Comment = ({commentData}) => {
   return (
     <div className='border border-2 border-black rounded my-2 p-2'>
-    <div className='text-2xl font-bold'>Comment Author</div>
-    <div>comment Content</div>
+    <div className='text-2xl font-bold'>User</div>
+    <div>{commentData.comment}</div>
   </div>
   )
 }
